@@ -36,6 +36,21 @@
     cursor: pointer;
     margin: 10px;
   }
+    <h2 class="number" onclick="copyNumber()">
+  📲 bKash/Nagad: 01813025646 (Tap to copy)
+</h2>
+    <style>
+  .number {
+    margin-top: 20px;
+    font-size: 22px;
+    background: rgba(255,255,255,0.15);
+    padding: 15px;
+    border-radius: 12px;
+    display: inline-block;
+    border: 2px solid gold;
+    color: #fef3c7;
+  }
+</style>
 </style>
 </head>
 
@@ -57,13 +72,12 @@
 <button onclick="payNow()">Send Salami 💸</button>
 
 <!-- 📲 QR -->
-<h3>Scan & Pay 📲</h3>
-<img src="qr.png" class="qr">
 <p>bKash/Nagad: 01813025646</p>
 
 <script>
-function payNow() {
-  alert("Scan QR or send to my number 😄");
+function copyNumber() {
+  navigator.clipboard.writeText("01813025646");
+  alert("Number copied! Send your salami 😄");
 }
 </script>
 
