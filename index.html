@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eid Salami for Radowan</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+    }
+
+    img.profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    img.qr {
+      width: 180px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 12px 25px;
+      background: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 👤 PROFILE -->
+<img src="me.jpg" class="profile">
+<h2>Radowan Rahi</h2>
+
+<h1>🌙 Eid Mubarak!</h1>
+<p>Send me wishes & Eid Salami 💸</p>
+
+<!-- 💌 WISH BUTTON -->
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeLQBJubDrGwO_BEriYEWhU4f1uLkg1WtqKXKvYhVVSCaOXGg/viewform?usp=header" target="_blank">
+  <button>Send Wish 💌</button>
+</a>
+
+<!-- 💸 SALAMI BUTTON -->
+<button onclick="payNow()">Send Salami 💸</button>
+
+<!-- 📲 QR -->
+<h3>Scan & Pay 📲</h3>
+<img src="qr.png" class="qr">
+<p>bKash/Nagad: 01813025646</p>
+
+<script>
+function payNow() {
+  alert("Scan QR or send to my number 😄");
+}
+</script>
+
+</body>
+</html>
