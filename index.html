@@ -36,7 +36,7 @@
     cursor: pointer;
     margin: 10px;
   }
-    <h2 class="number" onclick="copyNumber()">
+    <h2 id="numberBox" class="number" style="display:none;" onclick="copyNumber()">
   📲 bKash/Nagad: 01813025646 (Tap to copy)
 </h2>
     <style>
@@ -75,11 +75,15 @@
 <p>bKash/Nagad: 01813025646</p>
 
 <script>
+function payNow() {
+  document.getElementById("numberBox").style.display = "block";
+  alert("Now send your salami 😄");
+}
+
 function copyNumber() {
   navigator.clipboard.writeText("01813025646");
-  alert("Number copied! Send your salami 😄");
+  alert("Number copied!");
 }
 </script>
-
 </body>
 </html>
